@@ -1,0 +1,16 @@
+B:\Пупсику на учебку\Medicine Calculator\bin\Debug\Medicine Calculator.exe.config
+B:\Пупсику на учебку\Medicine Calculator\bin\Debug\Medicine Calculator.exe
+B:\Пупсику на учебку\Medicine Calculator\bin\Debug\Medicine Calculator.pdb
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\Medicine Calculator.csproj.AssemblyReference.cache
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\Medicine Calculator.csproj.SuggestedBindingRedirects.cache
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\MainWindow.g.cs
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\App.g.cs
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\Medicine Calculator_MarkupCompile.cache
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\Medicine Calculator_MarkupCompile.lref
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\MainWindow.baml
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\Medicine Calculator.g.resources
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\Medicine_Calculator.Properties.Resources.resources
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\Medicine Calculator.csproj.GenerateResource.cache
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\Medicine Calculator.csproj.CoreCompileInputs.cache
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\Medicine Calculator.exe
+B:\Пупсику на учебку\Medicine Calculator\obj\Debug\Medicine Calculator.pdb
