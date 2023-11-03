@@ -37,48 +37,48 @@
             </GroupBox.Header>
             <ScrollViewer VerticalScrollBarVisibility="Visible" CanContentScroll="True" Height="405">
                 <StackPanel>
-                    <CheckBox x:Name="a" VerticalAlignment="Center" Margin="10">
+                    <CheckBox VerticalAlignment="Center" Margin="10"  Checked="add_four_point" Unchecked="minus_four_point" >
                         <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-18,0,0">Предшествующее ВТЭО (за исключением однократного эпизода, связанного с большим хирургическим вмешательством)</TextBlock>
                     </CheckBox>
-                    <CheckBox VerticalAlignment="Center" Margin="10">
+                    <CheckBox VerticalAlignment="Center" Margin="10"  Checked="add_three_point" Unchecked="minus_three_point">
                         <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-15,0,0">Предшествующее ВТЭО, спровоцированное большим хирургическим вмешательством</TextBlock>
                     </CheckBox>
-                    <CheckBox VerticalAlignment="Center" Margin="10,10,10,0">
+                    <CheckBox VerticalAlignment="Center" Margin="10,10,10,0" Checked="add_one_point" Unchecked="minus_one_point">
                         <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-15,0,0">Семейный анамнез неспровоцированной или связанное с воздействием эстрогена ВТЭО у родственника первой степени родства</TextBlock>
                     </CheckBox>
-                    <CheckBox VerticalAlignment="Center" Margin="10,10,10,0">
+                    <CheckBox VerticalAlignment="Center" Margin="10,10,10,0" Checked="add_one_point" Unchecked="minus_one_point">
                         <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Возраст (&gt;35 лет)</TextBlock>
                     </CheckBox>
-                    <CheckBox VerticalAlignment="Center" Margin="10,10,10,0">
+                    <CheckBox VerticalAlignment="Center" Margin="10,10,10,0" Checked="add_one_point" Unchecked="minus_one_point">
                         <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Курение</TextBlock>
                     </CheckBox>
-                    <CheckBox VerticalAlignment="Center" Margin="10,10,10,0">
+                    <CheckBox VerticalAlignment="Center" Margin="10,10,10,0" Checked="add_one_point" Unchecked="minus_one_point">
                         <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-15,0,0">Варикозное расширение вен нижних конечностей тяжелой степени</TextBlock>
                     </CheckBox>
-                    <Expander Margin="5,0">
+                    <Expander Margin="5,0" >
                         <Expander.Header>
                             <TextBlock  TextWrapping="Wrap" TextAlignment="Justify" FontSize="15" Margin="5">Подтвержденное наличие тромбофилии высокого риска:</TextBlock>
                         </Expander.Header>
                         <StackPanel Margin="5">
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="a" VerticalAlignment="Center" Margin="5" Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Антифосфолипидный синдром (АФС)</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="b" VerticalAlignment="Center" Margin="5" Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Гомозиготная мутация гена фактора V (мутация Лейден F5 G1691A) или rs 6025 (далее – мутация F5)</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="c" VerticalAlignment="Center" Margin="5" Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Гомозиготная мутация гена фактора II (протромбина) F2 G20210А или rs 179996 (далее – мутация F2)</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="d" VerticalAlignment="Center" Margin="5" Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Сочетание гетерозиготных мутаций факторов V (Лейден) и II (протромбина);</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="e" VerticalAlignment="Center" Margin="5"   Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Дефицит АТ</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="f" VerticalAlignment="Center" Margin="5"  Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Дефицит протеина С</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="g" VerticalAlignment="Center" Margin="5"  Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Дефицит протеина S</TextBlock>
                             </CheckBox>
                         </StackPanel>
@@ -88,34 +88,34 @@
                             <TextBlock  TextWrapping="Wrap" TextAlignment="Justify" FontSize="15" Margin="5">Сопутствующие заболевания:</TextBlock>
                         </Expander.Header>
                         <StackPanel Margin="5">
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="h" VerticalAlignment="Center" Margin="5" Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Онкологическое заболевание;</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="i" VerticalAlignment="Center" Margin="5"  Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Пароксизмальная ночная гемоглобинурия,</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="j" VerticalAlignment="Center" Margin="5"  Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Сердечная недостаточность;</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="k" VerticalAlignment="Center" Margin="5"  Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Активная системная красная волчанка,</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="l" VerticalAlignment="Center" Margin="5" Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Воспалительная полиартропатия,</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="m" VerticalAlignment="Center" Margin="5" Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Воспалительное заболевание кишечника;</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="n" VerticalAlignment="Center" Margin="5" Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Нефротический синдром;</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="o" VerticalAlignment="Center" Margin="5" Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Сахарный диабет I типа с нефропатией;</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="p" VerticalAlignment="Center" Margin="5" Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Серповидноклеточная анемия;</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="q" VerticalAlignment="Center" Margin="5" Checked="add_answer_expander" Unchecked="minus_answer_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Наркомания с внутривенным введением наркотиков в настоящее время</TextBlock>
                             </CheckBox>
                         </StackPanel>
@@ -125,10 +125,10 @@
                             <TextBlock  TextWrapping="Wrap" TextAlignment="Justify" FontSize="15" Margin="5">Известная тромбофилия низкого риска (без ВТЭО)</TextBlock>
                         </Expander.Header>
                         <StackPanel Margin="0">
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="r" Margin="5" Checked="add_one_point_expander" Unchecked="minus_one_point_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Антифосфолипидный синдром (АФС)</TextBlock>
                             </CheckBox>
-                            <CheckBox VerticalAlignment="Center" Margin="5">
+                            <CheckBox  x:Name="s" VerticalAlignment="Center" Margin="5" Checked="add_one_point_expander" Unchecked="minus_one_point_expander">
                                 <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Гомозиготная мутация гена фактора V (мутация Лейден F5 G1691A) или rs 6025 (далее – мутация F5)</TextBlock>
                             </CheckBox>
                         </StackPanel>
@@ -142,34 +142,34 @@
                 <Label FontSize="30" Margin="150,20" FontWeight="DemiBold">Фактор</Label>
             </GroupBox.Header>
             <StackPanel>
-                <CheckBox VerticalAlignment="Center" Margin="10,0">
+                <CheckBox VerticalAlignment="Center" Margin="10,0" Checked="add_one_point" Unchecked="minus_one_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Преэклампсия во время текущей беременности</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10">
+                <CheckBox VerticalAlignment="Center" Margin="10" Checked="add_one_point" Unchecked="minus_one_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">ВРТ/ЭКО (только антенатально)</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0">
+                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0" Checked="add_one_point" Unchecked="minus_one_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Многоплодная беременность</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0">
+                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0" Checked="add_two_point" Unchecked="minus_two_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Кесарево сечение в родах</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0">
+                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0" Checked="add_one_point" Unchecked="minus_one_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Плановое кесарево сечение</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0">
+                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0" Checked="add_one_point" Unchecked="minus_one_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Вагинальное оперативное родоразрешение</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0">
+                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0" Checked="add_one_point" Unchecked="minus_one_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Продолжительные роды (&gt;24 часов)</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0">
+                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0" Checked="add_one_point" Unchecked="minus_one_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Послеродовое кровотечение (&gt;1 литра или переливание крови)</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0">
+                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0" Checked="add_one_point" Unchecked="minus_one_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Преждевременные роды &lt;37+0 недели при данной беременности</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0">
+                <CheckBox VerticalAlignment="Center" Margin="10,10,10,0" Checked="add_one_point" Unchecked="minus_one_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Мертворождение в настоящую беременность</TextBlock>
                 </CheckBox>
             </StackPanel>
@@ -180,19 +180,19 @@
                 <Label FontSize="30" Margin="150,20" FontWeight="DemiBold">Фактор</Label>
             </GroupBox.Header>
             <StackPanel>
-                <CheckBox VerticalAlignment="Center" Margin="10">
+                <CheckBox VerticalAlignment="Center" Margin="10"  Checked="add_three_point" Unchecked="minus_three_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-15,0,0">Любая хирургическая процедура во время беременности или послеродового периода</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10">
+                <CheckBox VerticalAlignment="Center" Margin="10" Checked="add_three_point" Unchecked="minus_three_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Неукротимая рвота</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10">
-                    <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Синдром гиперстимуляции яичников (только первый триместр)</TextBlock>
+                <CheckBox VerticalAlignment="Center" Margin="10" Checked="add_four_point" Unchecked="minus_four_point">
+                    <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0" >Синдром гиперстимуляции яичников (только первый триместр)</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10">
+                <CheckBox VerticalAlignment="Center" Margin="10" Checked="add_one_point" Unchecked="minus_one_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Системная инфекция в настоящее время</TextBlock>
                 </CheckBox>
-                <CheckBox VerticalAlignment="Center" Margin="10">
+                <CheckBox VerticalAlignment="Center" Margin="10" Checked="add_one_point" Unchecked="minus_one_point">
                     <TextBlock TextAlignment="Justify" Padding="10" FontFamily="Raleway" FontSize="15" TextWrapping="Wrap"  Margin="0,-10,0,0">Ограничение подвижности, обезвоживание</TextBlock>
                 </CheckBox>
             </StackPanel>
@@ -200,26 +200,27 @@
 
         <TextBlock Grid.Row="3" Grid.Column="2" Height="30" Width="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" TextAlignment="Left" FontFamily="Serif" FontWeight="Medium" Padding="4" Margin="10"> Масса тела и рост:</TextBlock>
         <TextBlock Grid.Row="4" Grid.Column="2" Height="25" Width="Auto" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" TextAlignment="Left" FontFamily="Serif" FontWeight="Light" Padding="4" Margin="10,0">Вес:</TextBlock>
-        <TextBox Grid.Row="4" Grid.Column="2" Height="25" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" TextAlignment="Left" FontFamily="Serif" FontWeight="Light" Padding="4" Margin="60,5" Background="Azure"></TextBox>
+        <TextBox x:Name="weight_box" Grid.Row="4" Grid.Column="2" Height="25" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" TextAlignment="Left" FontFamily="Serif" FontWeight="Light" Padding="4" Margin="60,5" Background="Azure"></TextBox>
         <TextBlock Grid.Row="4" Grid.Column="2" Height="25" Width="Auto" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="10" TextAlignment="Left" FontFamily="Serif" FontWeight="Medium" Padding="4" Margin="160,0">кг.</TextBlock>
         <TextBlock Grid.Row="4" Grid.Column="2" Height="25" Width="Auto" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" TextAlignment="Right" FontFamily="Serif" FontWeight="Light" Padding="4" Margin="10,0">Рост:</TextBlock>
-        <TextBox Grid.Row="4" Grid.Column="2" Height="25" Width="100" VerticalAlignment="Top" HorizontalAlignment="Right" FontSize="20" TextAlignment="Left" FontFamily="Serif" FontWeight="Light" Padding="4" Margin="60,5" Background="Azure"></TextBox>
+        <TextBox  x:Name="rost_box" Grid.Row="4" Grid.Column="2" Height="25" Width="100" VerticalAlignment="Top" HorizontalAlignment="Right" FontSize="15" TextAlignment="Left" FontFamily="Serif" FontWeight="Light" Padding="4" Margin="100,5" Background="Azure"></TextBox>
         <TextBlock Grid.Row="4" Grid.Column="2" Height="25" Width="Auto" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="10" TextAlignment="Left" FontFamily="Serif" FontWeight="Medium" Padding="4" Margin="38,0">см.</TextBlock>
         <TextBlock Grid.Row="4" Grid.Column="2" Height="25" Width="Auto" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" TextAlignment="Left" FontFamily="Serif" FontWeight="Light" Padding="4" Margin="10,0">Вес:</TextBlock>
         <TextBlock Grid.Row="5" Grid.Column="2" Height="25" Width="Auto" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" TextAlignment="Left" FontFamily="Serif" FontWeight="Light" Padding="4" Margin="10,0">ИМТ=</TextBlock>
-        <TextBlock Grid.Row="5" Grid.Column="2" Height="25" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" TextAlignment="Left" FontFamily="Serif" FontWeight="Light" Padding="4" Margin="80,5" Background="Azure"></TextBlock>
-        <Button Grid.Row="5" Grid.Column="2" Height="25" Width="150" HorizontalAlignment="Right" Margin="10,0" FontFamily="Serif" FontWeight="Light" Padding="4" FontSize="15">Рассчитать ИМТ</Button>
+        <TextBlock x:Name="imt_box" Grid.Row="5" Grid.Column="2" Height="25" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" TextAlignment="Left" FontFamily="Serif" FontWeight="Light" Padding="4" Margin="80,5" Background="Azure"></TextBlock>
+        <Button Grid.Row="5" Grid.Column="2" Height="25" Width="150" HorizontalAlignment="Right" Margin="0,5,100,0" FontFamily="Serif" FontWeight="Light" Padding="4" FontSize="15" Click="calculate_BMI" VerticalAlignment="Top">Рассчитать ИМТ</Button>
+        <Button Grid.Row="5" Grid.Column="1" Height="25" Width="250" HorizontalAlignment="Center" Margin="10,0" FontFamily="Serif" FontWeight="Medium" Padding="4" FontSize="15" Background="Red" Foreground="White"  Click="calculate_risk">Рассчитать риск</Button>
 
         <TextBlock Grid.Row="6" Grid.ColumnSpan="3" Text="Результат расчета факторов риска ВТЭО:" FontSize="30" TextAlignment="Center" FontFamily="Serif" FontWeight="Medium" Background="AntiqueWhite" Padding="10" Margin="0,10,0,0"></TextBlock>
         <Border  Grid.Row="7" Grid.Column="0" CornerRadius="7" BorderBrush="#FFABADB3" BorderThickness="1" Background="#FFD3D3D3">
             <StackPanel Margin="10" Background="White">
-                <TextBlock FontFamily="Serif" FontWeight="Medium" Padding="4" FontSize="20" Margin="10">Баллы риска ВТЭО: ...</TextBlock>
-                <TextBlock FontFamily="Serif" FontWeight="Medium" Padding="4" FontSize="20" Margin="10">Группа риска: ...</TextBlock>
+                <TextBlock  x:Name="points_block" FontFamily="Serif" FontWeight="Medium" Padding="4" FontSize="20" Margin="10">Баллы риска ВТЭО: ...</TextBlock>
+                <TextBlock  x:Name="group_risk_block" FontFamily="Serif" FontWeight="Medium" Padding="4" FontSize="20" Margin="10">Группа риска: ...</TextBlock>
             </StackPanel>
         </Border>
         <Border  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" CornerRadius="7" BorderBrush="#FFABADB3" BorderThickness="1" Background="#FFD3D3D3">
             <StackPanel Margin="10" Background="White">
-                <TextBlock FontFamily="Serif" FontWeight="Medium" Padding="4" FontSize="20" Margin="10">Назначения: ...</TextBlock>
+                <TextBlock x:Name="prescription_block" FontFamily="Serif" FontWeight="Medium" Padding="4" FontSize="20" Margin="10">Назначения: ...</TextBlock>
             </StackPanel>
         </Border>
 
